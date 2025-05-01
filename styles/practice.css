@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+    border: 1px solid blue;
+    /* some other options include none and hidden */
+    background-color: rgb(180, 255, 255)
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    background-color: rgba(50, 50, 50, 0.5)
+}
+
+h3 {
+    text-align: left;
+    border-left: 6px solid red;
+}
+
+/* Color names site: https://www.w3schools.com/colors/colors_names.asp */
+p {
+    color: rgb(100, 200, 100);
+    background-color: rgb(250, 250, 200);
+}
+
+/* This only modifies a specific id, which is one item */
+#big-heading {
+    font-size:100px;
+    background-image: url(../images/steve.jpg);
+    background-attachment: fixed;
+    /* other option above is scroll */
+}
+
+/* This only modifies a specific class, which can be multiple items */
+.purple {
+    border: 8px dotted purple;
+}
