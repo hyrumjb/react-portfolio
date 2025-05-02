@@ -112,8 +112,7 @@ b {
 }
 
 .ss {
-    max-width: 100%;
-    height: 300px;
+    max-width: 70vw;
     border: 3px solid lightgrey;
     border-radius: 20px;
 }
