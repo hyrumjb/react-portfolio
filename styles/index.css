@@ -117,6 +117,10 @@ b {
     border-radius: 20px;
 }
 
+#vertical {
+    max-width: 40vw;
+}
+
 .ss:hover {
     filter: invert(1);
 }
