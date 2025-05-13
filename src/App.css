@@ -129,3 +129,12 @@ b {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.problem {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 4rem;
+}

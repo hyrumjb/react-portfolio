@@ -1,36 +1,24 @@
-<!DOCTYPE html>
-<html lang="en-US">
+import '../App.css';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="portfolio, projects, Hyrum Bradshaw">
-    <meta name="description" content="Here's a few of the projects I've worked on and links to GitHub to see my work.">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.come/css?family=Libre+Baskerville|Alegreya|Lato">
-    <title>hyrum bradshaw</title>
-</head>
+import blockchainImg from '../assets/blockchain_ss.png';
+import cryptoImg from '../assets/crypto.png';
+import foodTripImg from '../assets/food-trip.png';
+import siliconSlopesImg from '../assets/silicon-slopes.png';
+import stGeorgeImg from '../assets/st-george.png';
+import steveImg from '../assets/steve_ss.png'
 
-<body>
-    <img src="images/background.png" class="background-img">
-    <header>
-        <h1>hyrum bradshaw</h1>
-    </header>
-
-    <nav>
-        <a href="index.html" >home</a>
-        <a href="about.html">about</a>
-        <a href="projects.html" class="active">projects</a>
-        <a href="future.html">future</a>
-    </nav>
-
-    <main>
-        <div>
+function Projects() {
+    return (
+        <>
             <h2>here's some of my work:</h2>
             <div>
-                <div class="center">
+                <div className="center">
                     <h3>silicon slopes</h3>
-                    <img src="images/silicon-slopes.png" alt="product screenshot" class="ss" id="vertical"><br>
+                    <img 
+                        src={siliconSlopesImg}
+                        alt="product screenshot" 
+                        className="ss" id="vertical" 
+                    />
                     <a href="https://github.com/hyrumjb/silicon-slopes">github</a>
                 </div>
                 <p>here's a <a href="https://hyrumjb.github.io/silicon-slopes/">link</a> to check out this new one.
@@ -39,9 +27,14 @@
                 </p>
             </div>
             <div>
-                <div class="center">
+                <div className="center">
                     <h3>crypto world</h3>
-                    <img src="images/crypto.png" alt="product screenshot" class="ss" id="vertical"><br>
+                    <img 
+                        src={cryptoImg}
+                        alt="product screenshot"
+                        className="ss"
+                        id="vertical"
+                    />
                     <a href="https://github.com/hyrumjb/crypto">github</a>
                 </div>
                 <p>here's a <a href="https://hyrumjb.github.io/crypto/">link</a> to check this project out.
@@ -51,9 +44,14 @@
                 </p>
             </div>
             <div>
-                <div class="center">
+                <div className="center">
                     <h3>st. george - tourism time</h3>
-                    <img src="images/st-george.png" alt="product screenshot" class="ss" id="vertical"><br>
+                    <img
+                        src={stGeorgeImg}
+                        alt="product screenshot" 
+                        className="ss" 
+                        id="vertical" 
+                    />
                     <a href="https://github.com/hyrumjb/st-george">github</a>
                 </div>
                 <p>here's a <a href="https://hyrumjb.github.io/st-george/">link</a> to check this project out.
@@ -63,9 +61,13 @@
                 </p>
             </div>
             <div>
-                <div class="center">
+                <div clasNames="center">
                     <h3>food trip - diet analysis</h3>
-                    <img src="images/food-trip.png" alt="product screenshot" class="ss"><br>
+                    <img 
+                        src={foodTripImg} 
+                        alt="product screenshot" 
+                        className="ss" 
+                    />
                     <a href="https://github.com/hyrumjb/food">github</a>
                 </div>
                 <p>here's a <a href="https://hyrumjb.github.io/food/">link</a> to check this project out.
@@ -75,9 +77,13 @@
                 </p>
             </div>
             <div>
-                <div class="center">
+                <div className="center">
                     <h3>steve jobs tribute</h3>
-                    <img src="images/steve_ss.png" alt="product screenshot" class="ss"><br>
+                    <img
+                        src={steveImg} 
+                        alt="product screenshot" 
+                        className="ss" 
+                    />
                     <a href="https://github.com/hyrumjb/html_practice/blob/main/steve.html">github</a>
                 </div>
                 <p>this link should work right <a href="steve.html">here</a>. basically, it's a site about steve jobs, with some quotes, video tributes, and his biographer's thoughts on him.
@@ -85,10 +91,14 @@
                 </p>
             </div>
             <div>
-                <div class="center">
+                <div className="center">
                     <h3>personalized blockchain</h3>
-                    <img src="images/blockchain_ss.png" alt="product screenshot" class="ss"><br>
-                    <a href="https://github.com/hyrumjb/blockchain">github (frontend)</a><br>
+                    <img 
+                        src={blockchainImg}
+                        alt="product screenshot" 
+                        className="ss" 
+                    />
+                    <a href="https://github.com/hyrumjb/blockchain">github (frontend)</a>
                     <a href="https://github.com/hyrumjb/blockchain_backend">github (backend)</a>
                 </div>
                 <p>this one was a project for cs111 at byu. i ended up spending quite a bit of time on it, and when it was 
@@ -98,7 +108,7 @@
                 </p>
             </div>
             <div>
-                <div class="center">
+                <div className="center">
                     <h3>finance app</h3>
                     <a href="https://github.com/hyrumjb/startup">github</a>
                 </div>
@@ -107,13 +117,9 @@
                     i guess it worked by the end and at least i learned a ton out of necessity.
                 </p>
             </div>
-        </div>
-    </main><hr>
+            <hr />
+        </>
+    );
+}
 
-    <footer>
-        <b id="leftie">site by hyrum / 2025</b>
-        <b id="rightie"><a href="mailto:bradshaw.hyrum@gmail.com">bradshaw.hyrum@gmail.com</a></b>
-    </footer>
-</body>
-
-</html>
+export default Projects;
