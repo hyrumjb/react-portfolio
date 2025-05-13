@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 function Home() {
@@ -23,9 +24,9 @@ function Home() {
 
             <div>
                 <h2>what's next?</h2>
-                <p>go check out the pages above if you wanna see some real quality content. the <a href="about.html">about</a> page is pretty cool because
-                    it kind of just tells about my life. <a href="projects.html">projects</a> will show some stuff I've done, both on my own and a bit for school.
-                    and <a href="future.html">future</a> is probably the coolest because it's all the next and new ideas. check them out.
+                <p>go check out the pages above if you wanna see some real quality content. the <Link to="/about">about</Link> page is pretty cool because
+                    it kind of just tells about my life. <Link to="/projects">projects</Link> will show some stuff I've done, both on my own and a bit for school.
+                    and <Link to="/future">future</Link> is probably the coolest because it's all the next and new ideas. check them out.
                 </p>
             </div>
             <hr />

@@ -1,6 +1,28 @@
+import { useState, useEffect } from 'react';
 import '../App.css';
 
+import thumbImg from "../assets/thumb.svg";
+
 function Future() {
+    const [count, setCount] = useState(() => parseInt(localStorage.getItem("count")) || 0);
+    const [isPopping, setIsPopping] = useState(false);
+
+    useEffect(() => {
+        localStorage.setItem("count", count);
+    }, [count]);
+
+    const handleClick = () => {
+        setCount(prev => prev + 1);
+        setIsPopping(true);
+    };
+
+    useEffect(() => {
+        if (isPopping) {
+            const timer = setTimeout(() => setIsPopping(false), 300);
+            return () => clearTimeout(timer);
+        }
+    }, [isPopping]);
+
     return (
         <>
             <div>
@@ -24,6 +46,10 @@ function Future() {
                     <li>ai learning platform for schools and personal use</li>
                     <li>software as a service for health insurance</li>
                 </ul>
+            </div>
+            <div className="center">
+                <img src={thumbImg} alt="Thumbs up icon" onClick={handleClick} className={isPopping ? "thumb-pop" : ""} style={{ cursor: 'pointer' }} />
+                <h2>{count}</h2>
             </div>
             <hr />
         </>

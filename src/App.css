@@ -236,3 +236,13 @@ b {
 @media (max-width: 500px) {
     /* Fix footer on small devices */
 }
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
+
+.thumb-pop {
+    animation: pop 0.3s ease;
+}
