@@ -1,8 +1,37 @@
+import { useState } from 'react';
 import '../App.css';
 
 function About() {
+
+    const [isOpen, setIsOpen] = useState(true);
+
+    const hidePopUp = () => {
+        setIsOpen(false);
+    }
+
     return (
         <>
+            {isOpen && (
+                <div className="pop-up" id="hide-me" onClick={hidePopUp}>
+                    <div
+                        className="pop-up-content" 
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <span 
+                            className="close-pop-up"
+                            onClick={hidePopUp} 
+                            role="button"
+                        >
+                            &times;
+                        </span>
+                        <p>Check out one of my latest projects built with HTML, CSS, JavaScript, and React:</p>
+                        <p className="center">
+                            Silicon Slopes (click <a href="https://hyrumjb.github.io/silicon/">here</a>).
+                        </p>
+                    </div>
+                </div>
+            )}
+            
             <div>
                 <h2>random facts . . .</h2>
                 <ul>

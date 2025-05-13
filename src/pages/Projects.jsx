@@ -11,31 +11,32 @@ function Projects() {
     return (
         <>
             <h2>here's some of my work:</h2>
+
             <div>
                 <div className="center">
                     <h3>silicon slopes</h3>
                     <img 
                         src={siliconSlopesImg}
                         alt="product screenshot" 
-                        className="ss" id="vertical" 
+                        className="ss"
                     />
-                    <a href="https://github.com/hyrumjb/silicon-slopes">github</a>
+                    <a href="https://github.com/hyrumjb/silicon-slopes" className="source-link">github</a>
                 </div>
                 <p>here's a <a href="https://hyrumjb.github.io/silicon-slopes/">link</a> to check out this new one.
                     i like the interactivity and design of this site--to be fair, it really is quite simple--but it's sleek,
                     the sidebar nav works well, and it's functional and beautiful on all device sizes.
                 </p>
             </div>
+
             <div>
                 <div className="center">
                     <h3>crypto world</h3>
                     <img 
                         src={cryptoImg}
                         alt="product screenshot"
-                        className="ss"
-                        id="vertical"
+                        className="ss vertical"
                     />
-                    <a href="https://github.com/hyrumjb/crypto">github</a>
+                    <a href="https://github.com/hyrumjb/crypto" className="source-link">github</a>
                 </div>
                 <p>here's a <a href="https://hyrumjb.github.io/crypto/">link</a> to check this project out.
                     i like the design of this one--it's simple and minimalist but based on the crypto exchange okx.
@@ -43,16 +44,16 @@ function Projects() {
                     making it simple and clear.
                 </p>
             </div>
+
             <div>
                 <div className="center">
                     <h3>st. george - tourism time</h3>
                     <img
                         src={stGeorgeImg}
                         alt="product screenshot" 
-                        className="ss" 
-                        id="vertical" 
+                        className="ss vertical"
                     />
-                    <a href="https://github.com/hyrumjb/st-george">github</a>
+                    <a href="https://github.com/hyrumjb/st-george" className="source-link">github</a>
                 </div>
                 <p>here's a <a href="https://hyrumjb.github.io/st-george/">link</a> to check this project out.
                     once again, this is a project hat used just html and css (less javascript than even the last one), but
@@ -60,15 +61,16 @@ function Projects() {
                     the sequoia capital website, especially the colorway and the fixed header, but there are some mixed ideas as well.
                 </p>
             </div>
+
             <div>
-                <div clasNames="center">
+                <div className="center">
                     <h3>food trip - diet analysis</h3>
                     <img 
                         src={foodTripImg} 
                         alt="product screenshot" 
                         className="ss" 
                     />
-                    <a href="https://github.com/hyrumjb/food">github</a>
+                    <a href="https://github.com/hyrumjb/food" className="source-link">github</a>
                 </div>
                 <p>here's a <a href="https://hyrumjb.github.io/food/">link</a> to check this project out.
                     this is one that used html, css, and started using quite a bit of javascript to analyze the user's choices
@@ -76,6 +78,7 @@ function Projects() {
                     the design is also built to be responsive to both mobile and varying sizes of desktop interfaces.
                 </p>
             </div>
+
             <div>
                 <div className="center">
                     <h3>steve jobs tribute</h3>
@@ -84,12 +87,13 @@ function Projects() {
                         alt="product screenshot" 
                         className="ss" 
                     />
-                    <a href="https://github.com/hyrumjb/html_practice/blob/main/steve.html">github</a>
+                    <a href="https://github.com/hyrumjb/html_practice/blob/main/steve.html" className="source-link">github</a>
                 </div>
                 <p>this link should work right <a href="steve.html">here</a>. basically, it's a site about steve jobs, with some quotes, video tributes, and his biographer's thoughts on him.
                     also, if i do say so myself, it's some pretty good looking html.
                 </p>
             </div>
+
             <div>
                 <div className="center">
                     <h3>personalized blockchain</h3>
@@ -98,8 +102,8 @@ function Projects() {
                         alt="product screenshot" 
                         className="ss" 
                     />
-                    <a href="https://github.com/hyrumjb/blockchain">github (frontend)</a>
-                    <a href="https://github.com/hyrumjb/blockchain_backend">github (backend)</a>
+                    <a href="https://github.com/hyrumjb/blockchain" className="source-link">github (frontend)</a>
+                    <a href="https://github.com/hyrumjb/blockchain_backend" className="source-link">github (backend)</a>
                 </div>
                 <p>this one was a project for cs111 at byu. i ended up spending quite a bit of time on it, and when it was 
                     running it was actually running quite beautifully. it lets you add a new block to a blockchain running on render
@@ -107,10 +111,11 @@ function Projects() {
                     ui is basic but aesthetic pa din.
                 </p>
             </div>
+
             <div>
                 <div className="center">
                     <h3>finance app</h3>
-                    <a href="https://github.com/hyrumjb/startup">github</a>
+                    <a href="https://github.com/hyrumjb/startup" className="source-link">github</a>
                 </div>
                 <p>this one was for cs260 at byu, which frankly was a class i wasn't ready for (and actually wasn't really supposed
                     to be in), but i learned a ton from it. i'm not necessarily proud of the aesthetic or even function of this one, but

@@ -5,6 +5,10 @@ function Home() {
         <>
             <div>
                 <h2>here's the deal . . .</h2>
+                <p>i'm currently updating this site (the design is still a bit outdated) to run on react.
+                    it's actually going quite well, and then i'll starting in some more javascript features.
+                </p>
+                <a href="https://github.com/hyrumjb/react-portfolio">(5-12-2025)</a>
                 <p>here's another little update, and it's clearly not perfect but i added some css. this should make the 
                     page a big more visually appealing, plus i added some background art by a world-renowned artist who learned
                     to use canva 5 minutes ago.

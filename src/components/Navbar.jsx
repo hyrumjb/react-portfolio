@@ -11,7 +11,7 @@ function Navbar() {
                 alt="Refresh page"
             />
             <header>
-                <h1>hyrum bradshaw</h1>
+                <h1 className="typing">hyrum bradshaw</h1>
             </header>
 
             <nav>
